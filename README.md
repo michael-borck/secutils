@@ -100,7 +100,7 @@ docker exec -it secutils bash
 
 
 
-EIther option you will now have access to the Linux container's graphical interface, where you can use the available security tools, including Wireshark, nmap, snort, hydra, nikto, wget, curl, ping, netcat, and sqlmap.
+Either option you will now have access to the Linux container's graphical interface, where you can use the available security tools, including Wireshark, nmap, snort, hydra, nikto, wget, curl, ping, netcat, and sqlmap.
 
 Remember to ensure that the Secutils container is up and running before attempting to connect using either method.
 ## License
