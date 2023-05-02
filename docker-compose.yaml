@@ -16,6 +16,7 @@ services:
     image: "ffeldhaus/wireshark:0.5"
     container_name: wireshark
     restart: always
+    privileged: true
     network_mode: "service:proxy"
     environment:
       - XPRA_PW=wireshark
@@ -26,6 +27,7 @@ services:
   secutils:
     image: michaelborck/secutils
     container_name: secutils
+    privileged: true
     command: ["/bin/sh", "-c", "/start.sh && exec /usr/bin/supervisord"]
     ports:
       - "6080:80"
